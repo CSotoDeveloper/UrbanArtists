@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active hr {
+  @apply block
+}
+
+body {
+  background-color: #121212;
+  /* 121212   */
+}
+
+h1,h2,h3,h4,p,a{
+  color: #FFFFFF;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
