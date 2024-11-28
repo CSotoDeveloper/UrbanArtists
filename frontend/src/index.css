@@ -12,7 +12,7 @@ body {
   /* 121212   */
 }
 
-h1,h2,h3,h4,p,a{
+h1,h2,h3,h4,a{
   color: #FFFFFF;
 }
 
@@ -28,4 +28,10 @@ h1, h2, h3 {
 
 ::-webkit-scrollbar{
   @apply hidden
+}
+
+@media (max-width:740px){
+  .active p{
+    @apply text-white bg-primary
+  }
 }

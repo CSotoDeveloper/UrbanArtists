@@ -4,7 +4,7 @@ import { artData } from "../assets/assets";
 
 function ArtMenu() {
   return (
-    <div id='#art' className='flex flex-col items-center gap-4 pt-16 pb-6'>
+    <div id='#art' className='flex flex-col items-center gap-4 pt-16 pb-6 text-white'>
       <h2 className='text-4xl font-semibold text-white'>Encuentra tu Arte</h2>
       <p className='sm:w-1/3 text-center text-lg'>Adentrate en la cultura urbana</p>
       <div className='grid grid-cols-3 sm:flex sm:justify-center gap-4 pt-5 w-full overflow-scroll'>

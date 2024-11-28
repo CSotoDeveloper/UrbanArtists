@@ -1,6 +1,6 @@
 import { InfoIcon, Verified, VerifiedIcon } from "lucide-react";
 import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import RelatedArtists from "../components/RelatedArtists";
 import { AppContext } from '../context/AppContext'
 
@@ -9,6 +9,7 @@ function Appointment() {
   const { artistId } = useParams()
   const { artists, currencySymbol } = useContext(AppContext)
   const daysOfWeek = ['LUN', 'MAR', 'MIE', 'JUE', 'VIE', 'SAB', 'DOM'];
+  const navigate = useNavigate()
 
   const [artistInfo, setArtistInfo] = useState(null)
   const [artistSlot, setArtistSlot] = useState([])
@@ -88,20 +89,20 @@ function Appointment() {
 
 
   return artistInfo && (
-    <div>
+    <div className="text-white">
       {/* Details */}
       <div className="flex flex-col sm:flex-row gap-4">
         <div>
           <img src={artistInfo.image} alt="" className="bg-primary w-full sm:max-w-72 rounded-lg" />
         </div>
 
-        <div className="flex-1 border border-primary bg-stone-900 rounded-lg p-8 py-7 mx-2 sm:mx-0  sm:mt-0.5">
+        <div className="flex-1 border border-primary bg-stone-950 rounded-lg p-8 py-7 mx-2 sm:mx-0  sm:mt-0.5">
           {/* doc info */}
           <p className="flex items-center gap-2 text-3xl font-medium ">
             {artistInfo.name}
             <VerifiedIcon className="text-primary w-5" />
           </p>
-          <div className="flex items-center gap-2 text-sm mt-1 text-black">
+          <div className="flex items-center gap-2 text-sm mt-1 text-white">
             <p>{artistInfo.degree} - {artistInfo.speciality}</p>
             <button type="button" className="py-0.5 px-2  text-sm rounded-full bg-primary text-white font-semibold">{artistInfo.experience}</button>
           </div>
@@ -141,6 +142,11 @@ function Appointment() {
         <button className="bg-primary text-white text-sm font-bold px-14 py-3 rounded-full my-6">Crear Cita</button>
       </div>
       <RelatedArtists artistId={artistId} speciality={artistInfo.speciality} />
+      <div className="flex items-center justify-center">
+
+      <button onClick={() => { navigate("/artists"); scrollTo(0,0) }} className='bg-primary font-semibold  text-white px-12 py-3 rounded-full ' type='button'>Ver mas...</button>
+      </div>
+
     </div>
   )
 

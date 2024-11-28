@@ -7,8 +7,8 @@ function Footer() {
   const navigate = useNavigate()
 
   return (
-    <footer className='md:mx-10'>
-      <div className='flex flex-col items-center sm:grid sm:grid-cols-4 gap-14 my-10 mt-40 text-sm'>
+    <footer className='md:mx-10 text-white'>
+      <div className='flex flex-col items-center sm:grid sm:grid-cols-4 gap-14 my-10 mt-32 text-sm'>
         <div className=' sm:flex'>
           <a href="/">
             <img className='sm:w-auto' src={assets.logo} alt="" />

@@ -16,11 +16,11 @@ function RelatedArtists({speciality, artistId}) {
   }, [artists, speciality, artistId])
 
   return (
-    <div id='art' className='flex flex-col items-center gap-4 my-16 md:mx-10'>
-    <h2 className='text-4xl font-medium'>Artistas Parecidos</h2>
-    <div className='w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0'>
+    <div id='art' className='flex flex-col items-center gap-4 my-16 md:mx-10 '>
+    <h2 className='text-4xl font-medium'>Artistas Relacionados</h2>
+    <div className='w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0 '>
       {relArtists.slice(0, 5).map(artist => (
-        <div onClick={()=> {navigate(`/appointment/${artist._id}`);scrollTo(0,0)}} className='border border-primary rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500' key={artist._id}>
+        <div onClick={()=> {navigate(`/appointment/${artist._id}`);scrollTo(0,0)}} className='bg-stone-950 border border-primary rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500' key={artist._id}>
           <img className='bg-accent' src={artist.image} alt="" />
           <div className='p-4'>
             <div className='flex items-center gap-2 text-sm text-center '>
