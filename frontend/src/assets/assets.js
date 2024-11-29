@@ -78,10 +78,7 @@ export const artists = [
     experience: '3 Years',
     about: 'Llevo desde la secundaria creando arte.',
     fees: 50,
-    address: {
-      line1: 'Lopez Portilo',
-      line2: 'Minera Autlan'
-    }
+    address: 'Tampico'
   },
   {
     _id: 'artist2',

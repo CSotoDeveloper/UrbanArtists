@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import MyAppointments from "./pages/MyAppointments";
 import MyProfile from "./pages/MyProfile";
+import UpcomingEvents from "./pages/UpcomingEvents";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/events" element={<Events/>} />
+          <Route path="/events/:eventId" element={<UpcomingEvents />} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/my-profile" element={<MyProfile/>} />
           <Route path="/my-appointments" element={<MyAppointments/>} />

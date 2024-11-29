@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { artists } from "../assets/assets";
+import { artData, artists } from "../assets/assets";
 
 export const AppContext = createContext()
 
@@ -8,7 +8,7 @@ const AppContextProvider = (props) => {
   const currencySymbol = '$'
 
   const value = {
-    artists, currencySymbol
+    artists, currencySymbol, artData
   }
 
   return (

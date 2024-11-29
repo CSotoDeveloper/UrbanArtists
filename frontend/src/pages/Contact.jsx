@@ -3,8 +3,8 @@ import { assets } from "../assets/assets";
 
 const Contact = () => {
   return (
-    <div className='text-white'>
-      <div className='text-center text-2xl pt-10'>
+    <div className='text-white pt-4'>
+      <div className='text-center text-2xl '>
         <h2 className='text-3xl'>Contactanos</h2>
       </div>
 

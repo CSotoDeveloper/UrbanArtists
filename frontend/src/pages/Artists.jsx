@@ -24,8 +24,8 @@ function Artists() {
 
 
   return (
-    <div className='text-white'>
-      <h2 className='font-medium text-center sm:text-start text-3xl'>Elige tu arte</h2>
+    <div className='text-white pt-4'>
+      <h2 className='font-medium text-center sm:text-start text-3xl'>Elige tu <span className='text-primary'>Arte</span></h2>
       <div className='flex flex-col sm:flex-row sm:items-start gap-5 mt-5 items-center'>
         <button
           className={`py-1 px-3 border rounded   transition-all sm:hidden  text-base ${showFilter ? 'bg-primary text-white font-semibold' : 'bg-white text-black'}`}
@@ -46,7 +46,7 @@ function Artists() {
           {
             filterArtist.map(artist => (
               <div onClick={() => navigate(`/appointment/${artist._id}`)}
-                className='border border-primary rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500'
+                className=' border bg-stone-950 border-primary rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500'
                 key={artist._id}>
                 <img className='bg-accent' src={artist.image} alt="" />
                 <div className='p-4'>

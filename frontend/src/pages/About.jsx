@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 function About() {
   return (
     <div className='text-white'>
-      <div className='text-center text-3xl pt-10 '>
+      <div className='text-center text-3xl pt-4 '>
         <h2 >Quienes <span className='text-primary font-medium'>Somos</span></h2>
       </div>
       <div className='my-10 flex flex-col md:flex-row gap-12'>

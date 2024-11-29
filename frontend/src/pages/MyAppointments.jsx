@@ -5,7 +5,7 @@ function MyAppointments() {
   const { artists } = useContext(AppContext)
   return (
     <div className='text-white'>
-      <h2 className='pb-6 mt-12 font-medium border-b text-3xl text-center'>Mis Clases</h2>
+      <h2 className='pb-6 pt-4 font-medium border-b text-3xl text-center'>Mis Clases</h2>
       <div className='grid grid-cols-2 gap-6  items-center pt-6 '>
         {artists.slice(0, 10).map((item) => (
           <div className='bg-stone-950 grid grid-cols-[1fr_2fr] gap-4 sm:flex sm:gap-6 py-2 border sm:min-h-48' key={item._id}>

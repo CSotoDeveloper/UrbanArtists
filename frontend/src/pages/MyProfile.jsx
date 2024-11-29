@@ -18,8 +18,8 @@ function MyProfile() {
   const [isEdit, setIsEdit] = useState(false)
 
   return (
-    <div className='flex justify-center bg-stone-950'>
-      <div className='text-white flex flex-col gap-2 text-sm justify-center border rounded-lg '>
+    <div className='flex justify-center pt-4 '>
+      <div className='text-white flex flex-col gap-2 bg-stone-950 text-sm justify-center border rounded-lg '>
         <div className='items-center flex flex-col'>
           <h2 className='text-3xl my-2'>Mi Perfil</h2>
           {
